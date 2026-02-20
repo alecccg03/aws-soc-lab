@@ -17,7 +17,7 @@ I built a cloud-native SOC environment on AWS to simulate real-world attacks (Br
 
 
 ## *Tools & Technologies*
-**AWS Services:** EC2, VPC, IAM, Lambda, CloudWatch, Amazon EventBridge, SNS
+**AWS Services:** EC2, VPC, IAM, Lambda, CloudWatch, GuardDuty, Amazon EventBridge, SNS
 
 **Security Tools:** Nmap (Recon), RDP (Brute Force)
 
