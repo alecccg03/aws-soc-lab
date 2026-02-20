@@ -5,6 +5,7 @@
 
 I built a cloud-native SOC environment on AWS to simulate real-world attacks (Brute Force, Reconnaissance, C&C) and automate detection using GuardDuty, Security Hub and EventBridge
 
+
 <img width="762" height="731" alt="Architecture Diagram" src="https://github.com/user-attachments/assets/2fcf07d6-47b8-40ac-91b5-58ee07039f05" />
 
 
@@ -15,9 +16,9 @@ I built a cloud-native SOC environment on AWS to simulate real-world attacks (Br
 4. When a High severity finding is fenerated, EventBridge catches the finding and triggers an SNS alert via email
 
 
-## **Tools & Technologies** 
-*AWS Services:* EC2, VPC, IAM, Lambda, CloudWatch, Amazon EventBridge, SNS
+## *Tools & Technologies*
+**AWS Services:** EC2, VPC, IAM, Lambda, CloudWatch, Amazon EventBridge, SNS
 
-*Security Tools:* Nmap (Recon), RDP (Brute Force)
+**Security Tools:** Nmap (Recon), RDP (Brute Force)
 
-*Languages:* Node.js (Lambda functions)
+**Languages:** Node.js (Lambda functions)
