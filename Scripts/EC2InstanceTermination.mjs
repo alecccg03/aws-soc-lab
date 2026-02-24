@@ -2,7 +2,7 @@ import { EC2Client, DescribeInstancesCommand, TerminateInstancesCommand } from "
 
 export const handler = async () => {
   const terminate = await terminateInstances();
-  const message = `Lab shutting down... 
+  const message = `Lab shutting down 
   Instances terminated: ${terminate.TerminatingInstances.length}`;
 
   console.log(message);
