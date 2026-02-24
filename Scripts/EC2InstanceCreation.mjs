@@ -5,7 +5,7 @@ export const handler = async () => {
   await startLinux();
   await startWindows(); 
 
-  const message = `Lab starting...
+  const message = `Lab starting
   Instances created: 2`;
 
   console.log(message);
