@@ -26,8 +26,6 @@ async function terminateInstances() {
   const command = new TerminateInstancesCommand(input);
   const response = await client.send(command);
 
-  console.log(JSON.stringify(response));
-
   return response;
 
 }
