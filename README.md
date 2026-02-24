@@ -3,7 +3,7 @@
 
 ## **Project Overview** 
 
-I built a cloud-native SOC environment on AWS to simulate real-world attacks (Brute Force, Reconnaissance, C&C) and automate detection using GuardDuty, Security Hub and EventBridge
+I built a cloud-native SOC environment on AWS designed with intentional architectural flaws to simulate real-world attack vectors. This lab serves as a testing ground for Brute Force, Reconnaissance, and C&C activity, using GuardDuty, Security Hub, and EventBridge to automate the end-to-end detection and notification pipeline.
 
 
 <img width="762" height="731" alt="Architecture Diagram" src="https://github.com/user-attachments/assets/2fcf07d6-47b8-40ac-91b5-58ee07039f05" />
