@@ -49,6 +49,16 @@ I built a cloud-native SOC environment on AWS designed with intentional architec
 
 **Purpose:** It is good to know if an unknown IP is running a port scan on your instances. Nmap can provide the attacker open ports, OS, service versions, etc. which they can use to get access or run attacks on your network.
 
+**Query**
+```sql
+filter srcAddr = "70.xx.xx.xx"
+| stats count_distinct(dstPort) as unique_ports by dstAddr
+| filter unique_ports > 5
+```
+
+<img width="840" height="400" alt="Nmap Port Scan" src="https://github.com/user-attachments/assets/e40ae288-fe15-436c-8bda-6c981ddf156b" />
+
+
 
 ### *Simulating a connection to a known Command & Control server*
 
