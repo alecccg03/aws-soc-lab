@@ -27,12 +27,28 @@ I built a cloud-native SOC environment on AWS designed with intentional architec
 ## **Attacks** 
 
 
-### *Simulating RDP Brute Force attack to test logs and alerting*
+### *Simulating RDP brute force attack to test logs and alerting*
 
-**Execution:** Executed a manual brute force attempt via RDP by entering 20+ incorrect password attempts within minutes.
+**Execution:** Executed a manual brute force attempt via RDP by entering 20+ incorrect password attempts within minutes
 
-**Evidence A:** Cloudwatch log insights showing consecutive attempts to port 3389 from the attacker's IP. 
+**Detection:** Cloudwatch log insights showing consecutive attempts to port 3389 from the attacker's IP; GuardDuty Finding - UnauthorizedAccess:EC2/RDPBruteForce
 
-**Evidence B:** GuardDuty Finding - UnauthorizedAccess:EC2/RDPBruteForce
+**Purpose:** If an attacker guesses your credentials and gains access to your machine, the damage could be unrecoverable. You need to make sure your logs correctly identify unauthorized access and brute force attacks
 
 
+### *Nmap port scan on EC2 instance* 
+
+**Execution:** Performed an nmap scan from a Linux VM on the EC2 instance 
+
+**Detection:** Cloudwatch logs show several hundred connection attempts from the VM to various ports on the EC2 instance in less than 60 seconds 
+
+**Purpose:** It is good to know if an unknown IP is running a port scan on your instances. Nmap can provide the attacker open ports, OS, service versions, etc. which they can use to get access or run attacks on your network.
+
+
+### *Simulating a connection to a known Command & Control server*
+
+**Execution:** Ran a ping command from the EC2 instance to a known malicious test domain provided by AWS for testing
+
+**Detection:** GuardDuty Finding - Backdoor:EC2/C&CActivity.B!DNS
+
+**Purpose:** C2C servers allow attackers to issue real-time commands on the affected machines and exfiltrate data. You should be aware if any of your instances are making regular connections to suspicious domains or a known malicious IP address
