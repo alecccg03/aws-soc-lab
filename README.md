@@ -27,7 +27,7 @@ I built a cloud-native SOC environment on AWS designed with intentional architec
 ## **Attacks** 
 
 
-### *Simulating RDP brute force attack to test logs and alerting*
+### *:boom: Simulating RDP brute force attack to test logs and alerting*
 
 **Execution:** Executed a manual brute force attempt via RDP by entering 20+ incorrect password attempts within minutes
 
@@ -41,7 +41,7 @@ I built a cloud-native SOC environment on AWS designed with intentional architec
 
 
 
-### *Nmap port scan on EC2 instance* 
+### *:boom: Nmap port scan on EC2 instance* 
 
 **Execution:** Performed an nmap scan from a Linux VM on the EC2 instance 
 
@@ -60,10 +60,14 @@ filter srcAddr = "70.xx.xx.xx"
 
 
 
-### *Simulating a connection to a known Command & Control server*
+
+### *:boom: Simulating a connection to a known Command & Control server*
 
 **Execution:** Ran a ping command from the EC2 instance to a known malicious test domain provided by AWS for testing
 
 **Detection:** GuardDuty Finding - Backdoor:EC2/C&CActivity.B!DNS
 
 **Purpose:** C2C servers allow attackers to issue real-time commands on the affected machines and exfiltrate data. You should be aware if any of your instances are making regular connections to suspicious domains or a known malicious IP address
+
+<img width="830" height="515" alt="C C" src="https://github.com/user-attachments/assets/bea97a5e-053c-4fbd-b714-16c5e8da23c0" />
+
