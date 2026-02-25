@@ -1,13 +1,37 @@
 {
   "action": "REJECT",
   "bytes": 120,
-  "dstAddr": "10.0.1.6",
+  "dstAddr": "10.0.1.10",
   "dstPort": 22,
   "logStatus": "OK",
   "packets": 7,
   "protocol": 6,
   "srcAddr": "70.xx.xx.xx",
   "srcPort": 55101,
+  "version": 2
+},
+{
+  "action": "REJECT",
+  "bytes": 120,
+  "dstAddr": "10.0.1.10",
+  "dstPort": 3389,
+  "logStatus": "OK",
+  "packets": 7,
+  "protocol": 6,
+  "srcAddr": "70.xx.xx.xx",
+  "srcPort": 58762,
+  "version": 2
+},
+{
+  "action": "REJECT",
+  "bytes": 120,
+  "dstAddr": "10.0.1.10",
+  "dstPort": 120,
+  "logStatus": "OK",
+  "packets": 7,
+  "protocol": 6,
+  "srcAddr": "70.xx.xx.xx",
+  "srcPort": 54232,
   "version": 2
 }
   
