@@ -1,0 +1,27 @@
+{
+    "Severity": 2,
+    "Type": "UnauthorizedAccess:EC2/RDPBruteForce",
+    "UpdatedAt": "2026-02-17T04:57:31.302Z",
+    "Description": "70.xx.xx.xx is performing RDP brute force attacks against i-xxxxxxxxxxxxxxxx. Brute force attacks are used to gain unauthorized access to your instance by guessing the RDP password.",
+    "Partition": "aws",
+    "Service": {
+      "Action": {
+        "ActionType": "NETWORK_CONNECTION",
+        "NetworkConnectionAction": {
+          "Blocked": false,
+          "ConnectionDirection": "INBOUND",
+          "LocalPortDetails": {
+            "Port": 3389,
+            "PortName": "RDP"
+          },
+          "Protocol": "TCP",
+        },
+      "Archived": false,
+      "Count": 1,
+      "EventFirstSeen": "2026-02-17T04:57:31.000Z",
+      "EventLastSeen": "2026-02-17T04:57:31.000Z",
+      "ResourceRole": "TARGET",
+      "ServiceName": "guardduty",
+    },
+    "Title": "70.xx.xx.xx is performing RDP brute force attacks against i-xxxxxxxxxxxxxxxx."
+  }
