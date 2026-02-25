@@ -1,0 +1,24 @@
+{
+    "Severity": 8,
+    "Type": "Backdoor:EC2/C&CActivity.B!DNS",
+    "UpdatedAt": "2026-02-17T04:57:31.287Z",
+    "Description": "The EC2 instance i-xxxxxxxxxxxxxxxx is querying a domain name associated with a known Command & Control server.",
+    "Partition": "aws",
+    "Service": {
+      "Action": {
+        "ActionType": "DNS_REQUEST",
+        "DnsRequestAction": {
+          "Domain": "GeneratedFindingDomainName",
+          "Protocol": "UDP",
+          "Blocked": false,
+        }
+      },
+      "Archived": false,
+      "Count": 1,
+      "EventFirstSeen": "2026-02-17T04:57:31.000Z",
+      "EventLastSeen": "2026-02-17T04:57:31.000Z",
+      "ResourceRole": "TARGET",
+      "ServiceName": "guardduty",
+    },
+    "Title": "The EC2 instance i-xxxxxxxxxxxxxxxx queried a known Command & Control server domain name."
+  }
