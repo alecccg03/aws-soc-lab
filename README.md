@@ -69,5 +69,8 @@ filter srcAddr = "70.xx.xx.xx"
 
 **Purpose:** C2C servers allow attackers to issue real-time commands on the affected machines and exfiltrate data. You should be aware if any of your instances are making regular connections to suspicious domains or a known malicious IP address
 
+**SNS Notification**
+
+<img width="900" height="120" alt="SNS" src="https://github.com/user-attachments/assets/6b0a7b17-d732-480d-b7f4-2baad57f4ef3" />
 <img width="830" height="515" alt="C C" src="https://github.com/user-attachments/assets/bea97a5e-053c-4fbd-b714-16c5e8da23c0" />
 
