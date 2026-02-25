@@ -1,58 +1,13 @@
-@entity.KeyAttributes.ResourceType	
-AWS::EC2::VPC
-@entity.KeyAttributes.Type	
-AWS::Resource
-@entity.KeyAttributes.Identifier	
-vpc-08ada866b292e8e43
-@aws.account	
-619241324532
-@aws.region	
-us-west-1
-@data_format	
-Default
-@data_source_name	
-amazon_vpc
-@data_source_type	
-flow
-@ingestionTime	
-1771386710231
-@log	
-619241324532:/aws/vpc/flowlogs
-@logGroupId	
-6a89cf4e-a3ae-4bb4-871e-4611a4ca0ffc
-@logStream	
-eni-02fe59612be13c596-all 
-@logStreamId	
-6a89cf4e-a3ae-4bb4-871e-4611a4ca0ffc::6cc01072a96b5a9aa5d12613ba058d7933d6cbc9b4b434f8ba5b16031925a11c::1771385461888
-@message	
-2 619241324532 eni-02fe59612be13c596 70.179.40.132 10.0.1.10 56636 1503 6 1 52 1771386662 1771386692 REJECT OK
-@timestamp	
-1771386662000
-accountId	
-619241324532
-action	
-REJECT
-bytes	
-52
-dstAddr	
-10.0.1.10
-dstPort	
-1503
-end	
-1771386692
-interfaceId	
-eni-02fe59612be13c596
-logStatus	
-OK
-packets	
-1
-protocol	
-6
-srcAddr	
-70.179.40.132
-srcPort	
-56636
-start	
-1771386662
-version	
-2
+{
+  "action": "REJECT",
+  "bytes": 120,
+  "dstAddr": "10.0.1.6",
+  "dstPort": 22,
+  "logStatus": "OK",
+  "packets": 7,
+  "protocol": 6,
+  "srcAddr": "70.xx.xx.xx",
+  "srcPort": 55101,
+  "version": 2
+}
+  
