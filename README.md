@@ -19,7 +19,7 @@ I built a cloud-native SOC environment on AWS designed with intentional architec
 ## *Tools & Technologies*
 **AWS Services:** EC2, VPC, IAM, Lambda, CloudWatch, GuardDuty, Amazon EventBridge, SNS
 
-**Security Tools:** Nmap (Recon), RDP (Brute Force)
+**Security Tools:** Nmap (Recon), RDP (Brute Force), Ping (C2C)
 
 **Languages:** Node.js (Lambda functions)
 
