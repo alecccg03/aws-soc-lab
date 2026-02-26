@@ -60,7 +60,7 @@ filter srcAddr = "70.xx.xx.xx"
 ```
 
 <details>
-  <summary><b>C2C Alert</b></summary>
+  <summary><b>Nmap Scan</b></summary>
 <img width="840" height="400" alt="Nmap Port Scan" src="https://github.com/user-attachments/assets/e40ae288-fe15-436c-8bda-6c981ddf156b" />
 </details>
 
@@ -77,7 +77,7 @@ filter srcAddr = "70.xx.xx.xx"
 **SNS Notification**
 
 <details>
-  <summary><b>Nmap Scan and SNS Notification</b></summary>
+  <summary><b>C2C Alert and SNS Notification</b></summary>
 <img width="900" height="120" alt="SNS" src="https://github.com/user-attachments/assets/6b0a7b17-d732-480d-b7f4-2baad57f4ef3" />
 <img width="830" height="515" alt="C C" src="https://github.com/user-attachments/assets/bea97a5e-053c-4fbd-b714-16c5e8da23c0" />
 </details>
