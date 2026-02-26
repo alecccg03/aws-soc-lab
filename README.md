@@ -81,3 +81,9 @@ filter srcAddr = "70.xx.xx.xx"
 <img width="900" height="120" alt="SNS" src="https://github.com/user-attachments/assets/6b0a7b17-d732-480d-b7f4-2baad57f4ef3" />
 <img width="830" height="515" alt="C C" src="https://github.com/user-attachments/assets/bea97a5e-053c-4fbd-b714-16c5e8da23c0" />
 </details>
+
+
+## **💡Key Learnings**
+
+- Gained hands-on experience validating security controls effectively capture suspicious outbound and inbound traffic
+- Developed an understanding of the flow between attacks, logging and alerting in the cloud
