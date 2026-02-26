@@ -35,8 +35,11 @@ I built a cloud-native SOC environment on AWS designed with intentional architec
 
 **Purpose:** If an attacker guesses your credentials and gains access to your machine, the damage could be unrecoverable. You need to make sure your logs correctly identify unauthorized access and brute force attacks
 
+<details>
+  <summary><b>GuardDuty Finding</b></summary>
 <img width="850" height="432" alt="RDP Brute Force" src="https://github.com/user-attachments/assets/f38351bf-c5db-4fd6-b299-5bc9d3e76fa9" />
 <img width="850" height="377" alt="RDP Access" src="https://github.com/user-attachments/assets/698d0250-126c-4b27-b670-dbf57ce1163f" />
+</details>
 
 
 
